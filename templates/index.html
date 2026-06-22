@@ -3,21 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colecionador Store</title>
+    <title>Colecionar Store</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-
 <body>
 
-    <header>
-        <h1>COLECIONAR STORE</h1>
-        <p>Colecionáveis que contam histórias</p>
+    <div class="barra-topo">
+        <div class="topo-conteudo">
+            <div class="topo-info">
+                <span>📍 Av Ipiranga, 324 - 17º Andar - SP</span>
+                <span class="separador"></span>
+                <span>📞 11 3326-1211</span>
+                <span class="separador"></span>
+                <span>🚚 Envios para todo o Brasil</span>
+            </div>
+
+            <div class="topo-redes">
+                <span>◎</span>
+                <span>f</span>
+                <span>♪</span>
+                <span>▶</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="cabecalho-principal">
+        <div class="logo-area">
+            <div class="logo-texto">
+                <h1>COLECIONAR</h1>
+                <div class="logo-linha">
+                    <span></span>
+                    <strong>STORE</strong>
+                    <b>☆</b>
+                </div>
+                <p>COLECIONÁVEIS QUE CONTAM HISTÓRIAS</p>
+            </div>
+        </div>
+
+        <div class="busca-area">
+            <input type="text" placeholder="O que você está procurando?">
+            <button type="button">⌕</button>
+        </div>
+
+        <nav class="acoes-area">
+            <a href="#">
+                <span class="icone">☏</span>
+                <small>Atendimento</small>
+            </a>
+
+            <a href="#">
+                <span class="icone">♡</span>
+                <small>Favoritos</small>
+            </a>
+
+            <a href="#">
+                <span class="icone">♙</span>
+                <small>Minha Conta</small>
+            </a>
+
+            <a href="#" class="carrinho">
+                <span class="contador">0</span>
+                <span class="icone">🛒</span>
+                <small>Carrinho</small>
+            </a>
+        </nav>
     </header>
 
-    <main>
-        <h2>Bem-vindo à Colecionador Store</h2>
-    </main>
+    <main class="conteudo-inicial"></main>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
