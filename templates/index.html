@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colecionar Store</title>
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -18,7 +17,6 @@
                 <span class="separador"></span>
                 <span>🚚 Envios para todo o Brasil</span>
             </div>
-
             <div class="topo-redes">
                 <span>◎</span>
                 <span>f</span>
@@ -47,21 +45,9 @@
         </div>
 
         <nav class="acoes-area">
-            <a href="#">
-                <span class="icone">☏</span>
-                <small>Atendimento</small>
-            </a>
-
-            <a href="#">
-                <span class="icone">♡</span>
-                <small>Favoritos</small>
-            </a>
-
-            <a href="#">
-                <span class="icone">♙</span>
-                <small>Minha Conta</small>
-            </a>
-
+            <a href="#"><span class="icone">☏</span><small>Atendimento</small></a>
+            <a href="#"><span class="icone">♡</span><small>Favoritos</small></a>
+            <a href="#"><span class="icone">♙</span><small>Minha Conta</small></a>
             <a href="#" class="carrinho">
                 <span class="contador">0</span>
                 <span class="icone">🛒</span>
@@ -70,9 +56,107 @@
         </nav>
     </header>
 
-    <main class="conteudo-inicial"></main>
+    <main class="pagina-home">
+        <aside class="sidebar">
+            <div class="sidebar-titulo">☰ CATEGORIAS</div>
+
+            <a href="#"><span>📘</span> Álbuns <b>›</b></a>
+            <a href="#"><span>🏆</span> Figurinhas <b>›</b></a>
+            <a href="#"><span>🎮</span> Videogames <b>›</b></a>
+            <a href="#"><span>💿</span> Jogos físicos <b>›</b></a>
+            <a href="#"><span>🃏</span> Cards <b>›</b></a>
+            <a href="#"><span>💎</span> Itens raros <b>›</b></a>
+            <a href="#"><span>📦</span> Coleções completas <b>›</b></a>
+            <a href="#"><span>🎧</span> Acessórios <b>›</b></a>
+            <a href="#" class="promocao"><span>🏷️</span> Promoções <b>›</b></a>
+            <a href="#" class="novidade"><span>☆</span> Novidades <b>›</b></a>
+
+            <div class="clube-card">
+                <span>ENTRE PARA O NOSSO</span>
+                <h3>CLUBE DE COLECIONADORES</h3>
+                <p>Ofertas exclusivas, lançamentos e itens raros!</p>
+                <button>QUERO PARTICIPAR ☆</button>
+            </div>
+        </aside>
+
+        <section class="conteudo-principal">
+            <section class="banner-principal">
+                <div class="banner-texto">
+                    <p class="banner-topo">ENCONTRE OS MELHORES</p>
+                    <h2>ITENS DE <span>COLECIONADOR</span></h2>
+
+                    <div class="banner-tags">
+                        <small>📘 ÁLBUNS</small>
+                        <small>🏆 FIGURINHAS</small>
+                        <small>🎮 GAMES</small>
+                        <small>💎 ITENS RAROS</small>
+                    </div>
+
+                    <p class="banner-descricao">Tudo para sua coleção em um só lugar!<br>Novidades toda semana.</p>
+                    <a href="#" class="botao-banner">VER PRODUTOS ›</a>
+                </div>
+
+                <div class="banner-visual">
+                    <div class="produto-visual album">ÁLBUM</div>
+                    <div class="produto-visual card">CARD</div>
+                    <div class="produto-visual game">GAME</div>
+                    <div class="produto-visual raro">RARO</div>
+                    <div class="moeda">★</div>
+                </div>
+            </section>
+
+            <section class="beneficios">
+                <div class="beneficio-card"><div class="beneficio-icone">🛡️</div><div><h3>COMPRA SEGURA</h3><p>Seus dados protegidos</p></div></div>
+                <div class="beneficio-card"><div class="beneficio-icone">🚚</div><div><h3>ENVIO PARA TODO BRASIL</h3><p>Entregamos para todo o país</p></div></div>
+                <div class="beneficio-card"><div class="beneficio-icone">💳</div><div><h3>PARCELE EM ATÉ 12X</h3><p>No cartão de crédito</p></div></div>
+                <div class="beneficio-card"><div class="beneficio-icone">🏅</div><div><h3>PRODUTOS ORIGINAIS</h3><p>Garantia de procedência</p></div></div>
+            </section>
+
+            <section class="produtos-destaque">
+                <div class="titulo-secao">
+                    <h2>PRODUTOS EM DESTAQUE</h2>
+                    <a href="#">VER TODOS ›</a>
+                </div>
+
+                <div class="produtos-grid">
+                    <article class="produto-card">
+                        <div class="produto-img album-img">ÁLBUM</div>
+                        <small>ÁLBUM</small>
+                        <h3>Copa do Mundo 2014</h3>
+                        <strong>R$ 79,90</strong>
+                        <p>ou 12x de R$ 8,10</p>
+                    </article>
+
+                    <article class="produto-card">
+                        <div class="produto-img figurinha-img">FIGURINHA</div>
+                        <small>FIGURINHA</small>
+                        <h3>Figurinha Neymar Gold</h3>
+                        <strong>R$ 450,00</strong>
+                        <p>ou 12x de R$ 45,61</p>
+                    </article>
+
+                    <article class="produto-card">
+                        <div class="produto-img videogame-img">GAME</div>
+                        <small>VIDEOGAME</small>
+                        <h3>PlayStation 2 Slim</h3>
+                        <strong>R$ 499,90</strong>
+                        <p>ou 12x de R$ 50,57</p>
+                    </article>
+
+                    <article class="produto-card">
+                        <div class="produto-img jogo-img">JOGO</div>
+                        <small>JOGO FÍSICO</small>
+                        <h3>The Legend of Zelda</h3>
+                        <strong>R$ 349,90</strong>
+                        <p>ou 12x de R$ 35,41</p>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <a href="#" class="whatsapp">☘</a>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
 </body>
 </html>

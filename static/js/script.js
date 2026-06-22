@@ -1,1 +1,1 @@
-// Funções JavaScript da Colecionar Store serão adicionadas nas próximas etapas.
+// Próximas funções da Colecionar Store serão adicionadas aqui.
