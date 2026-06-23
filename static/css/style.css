@@ -456,3 +456,37 @@ body{
     .beneficios,.produtos-grid{grid-template-columns:1fr}
     .pagina-home{padding:0 18px 40px}
 }
+/* Banner principal usando imagem aprovada */
+.banner-imagem{
+    min-height:unset;
+    height:auto;
+    padding:0;
+    background:none;
+    display:block;
+    overflow:hidden;
+    border-radius:13px;
+    box-shadow:0 14px 34px rgba(0,60,180,.14);
+}
+
+.banner-imagem::after{
+    display:none;
+}
+
+.banner-imagem img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:13px;
+}
+
+/* Mantém o banner bonito em telas menores */
+@media(max-width:900px){
+    .banner-imagem{
+        padding:0;
+    }
+
+    .banner-imagem img{
+        width:100%;
+        height:auto;
+    }
+}
