@@ -322,3 +322,69 @@ body{
     .pagina-home{padding:0 18px 40px}
     .banner-principal{height:260px}
 }
+
+/* Menu lateral com subcategorias ao passar o mouse */
+.sidebar{
+    position:relative;
+    z-index:20;
+}
+
+.categoria-item{
+    position:relative;
+}
+
+.categoria-item > a{
+    position:relative;
+}
+
+.categoria-item:hover > a{
+    background:#f4f7ff;
+    color:var(--azul);
+}
+
+.submenu-categorias{
+    position:absolute;
+    top:0;
+    left:100%;
+    width:245px;
+    background:#fff;
+    border:1px solid var(--borda);
+    border-radius:0 10px 10px 10px;
+    box-shadow:0 14px 28px rgba(7,16,47,.14);
+    padding:8px 0;
+    opacity:0;
+    visibility:hidden;
+    transform:translateX(12px);
+    transition:opacity .18s ease, transform .18s ease, visibility .18s ease;
+    pointer-events:none;
+    z-index:50;
+}
+
+.categoria-item:hover .submenu-categorias{
+    opacity:1;
+    visibility:visible;
+    transform:translateX(0);
+    pointer-events:auto;
+}
+
+.submenu-categorias a{
+    height:38px;
+    border:none;
+    border-bottom:1px solid #f0f3fa;
+    padding:0 18px;
+    font-size:14px;
+    font-weight:800;
+    color:#07102f;
+    background:#fff;
+    border-radius:0;
+}
+
+.submenu-categorias a:last-child{
+    border-bottom:none;
+}
+
+.submenu-categorias a:hover{
+    background:#f4f7ff;
+    color:var(--azul);
+    padding-left:22px;
+}
